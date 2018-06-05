@@ -37,7 +37,7 @@ public class GazeSystem : MonoBehaviour
 		if(Physics.Raycast(ray, out hit))
 		{
 			var hitObject = hit.collider.gameObject;
-			var gaze = hitObject.GetComponent<GazeableObject>();
+			var gaze = hitObject.GetComponentInParent<GazeableObject>();
 
 			if(gaze != null)
 			{

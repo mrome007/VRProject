@@ -60,7 +60,6 @@ GameObject:
   m_Component:
   - component: {fileID: 435794}
   - component: {fileID: 13632434}
-  - component: {fileID: 114263598753080854}
   m_Layer: 0
   m_Name: BuildingA
   m_TagString: Untagged
@@ -93,6 +92,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 475780}
+  - component: {fileID: 114364440138168330}
   m_Layer: 0
   m_Name: BuildingA
   m_TagString: Untagged
@@ -379,12 +379,12 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187220}
   m_IsPrefabParent: 1
---- !u!114 &114263598753080854
+--- !u!114 &114364440138168330
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162958}
+  m_GameObject: {fileID: 187220}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}

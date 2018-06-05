@@ -26,7 +26,6 @@ GameObject:
   m_Component:
   - component: {fileID: 479732}
   - component: {fileID: 6583582}
-  - component: {fileID: 114758398455119752}
   m_Layer: 0
   m_Name: FurnaceA
   m_TagString: Untagged
@@ -42,6 +41,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 480240}
+  - component: {fileID: 114605170761101988}
   m_Layer: 0
   m_Name: FurnaceA
   m_TagString: Untagged
@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -40}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 493996}
@@ -234,12 +234,12 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161838}
   m_IsPrefabParent: 1
---- !u!114 &114758398455119752
+--- !u!114 &114605170761101988
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144428}
+  m_GameObject: {fileID: 161838}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}
