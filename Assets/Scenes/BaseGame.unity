@@ -453,7 +453,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 224890533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1486778065}
@@ -2111,6 +2111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reticle: {fileID: 1673313791}
+  inactiveReticleColor: {r: 1, g: 1, b: 1, a: 1}
+  activeReticleColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1555351863
 Prefab:
   m_ObjectHideFlags: 0
@@ -2275,10 +2277,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1673313792}
   - component: {fileID: 1673313795}
-  - component: {fileID: 1673313794}
   - component: {fileID: 1673313793}
-  m_Layer: 0
-  m_Name: Sphere
+  m_Layer: 2
+  m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2331,18 +2332,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &1673313794
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1673313791}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1673313795
 MeshFilter:
   m_ObjectHideFlags: 0

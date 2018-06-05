@@ -7,7 +7,10 @@ public class GazeSystem : MonoBehaviour
 	[SerializeField]
 	private GameObject reticle;
 
+	[SerializeField]
 	private Color inactiveReticleColor = Color.white;
+
+	[SerializeField]
 	private Color activeReticleColor = Color.green;
 
 	private GazeableObject currentGazeObject;
