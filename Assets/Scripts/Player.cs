@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour 
 {
+	public InputMode ActiveMode;
+
 	private static Player instance = null;
 	
 	public static Player Instance

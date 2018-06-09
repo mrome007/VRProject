@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VRCanvas : MonoBehaviour 
 {
-	private GazeableButton currentActiveButton;
+	public GazeableButton currentActiveButton;
 
 	[SerializeField]
 	private Color unselectedColor = Color.white;
@@ -27,6 +27,7 @@ public class VRCanvas : MonoBehaviour
 		else
 		{
 			currentActiveButton = null;
+			Player.Instance.ActiveMode = InputMode.NONE;
 		}
 	}
 }

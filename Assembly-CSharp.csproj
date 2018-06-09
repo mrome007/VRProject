@@ -157,6 +157,7 @@
      <Compile Include="Assets\Scripts\GazeableButton.cs" />
      <Compile Include="Assets\Scripts\GazeableObject.cs" />
      <Compile Include="Assets\Scripts\GazeSystem.cs" />
+     <Compile Include="Assets\Scripts\ModeButton.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\VRCanvas.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
