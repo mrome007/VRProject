@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GazeableObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GazeSystem.cs">
     <Files>
-      <File FileName="Assets/Scripts/GazeSystem.cs" Line="31" Column="3" />
-      <File FileName="Assets/Scripts/GazeableObject.cs" Line="9" Column="3" />
+      <File FileName="Assets/Scripts/GazeableObject.cs" Line="34" Column="32" />
+      <File FileName="Assets/Scripts/GazeSystem.cs" Line="40" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
