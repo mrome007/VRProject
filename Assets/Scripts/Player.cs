@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
 	public InputMode ActiveMode;
 
 	private static Player instance = null;
+
+	[SerializeField]
+	private float playerSpeed = 3.0f;
 	
 	public static Player Instance
 	{
@@ -28,6 +31,22 @@ public class Player : MonoBehaviour
 		}
 
 		instance = this;
+	}
+
+	private void Update()
+	{
+		TryWalk();
+	}
+
+	public void TryWalk()
+	{
+		if(Input.GetMouseButton(0) && ActiveMode == InputMode.WALK)
+		{
+			var forward = Camera.main.transform.forward;
+			var newPosition = transform.position + forward * Time.deltaTime * playerSpeed;
+			newPosition.y = transform.position.y;
+			transform.position = newPosition;
+		}
 	}
 }
 
