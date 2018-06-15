@@ -5,6 +5,8 @@ using UnityEngine;
 public class GazeableObject : MonoBehaviour 
 {
 	public bool IsTransformable;
+	private int objectLayer;
+	private const int IgnoreRaycastLayer = 2;
 
 	public virtual void OnGazeEnter(RaycastHit hit)
 	{
@@ -24,6 +26,11 @@ public class GazeableObject : MonoBehaviour
 	public virtual void OnPress(RaycastHit hit)
 	{
 		Debug.Log("Button Press");
+		if(IsTransformable)
+		{
+			objectLayer = gameObject.layer;
+			gameObject.layer = IgnoreRaycastLayer;
+		}
 	}
 
 	public virtual void OnHold(RaycastHit hit)
@@ -39,6 +46,10 @@ public class GazeableObject : MonoBehaviour
 	public virtual void OnRelease(RaycastHit hit)
 	{
 		Debug.Log("Button Released");
+		if(IsTransformable)
+		{
+			gameObject.layer = objectLayer;
+		}
 	}
 
 	public virtual void GazeTransform(RaycastHit hit)
