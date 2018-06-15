@@ -8,11 +8,21 @@ public class Floor : GazeableObject
 	{
 		base.OnPress(hit);
 
-		if(Player.Instance.ActiveMode == InputMode.TELEPORT)
+		switch(Player.Instance.ActiveMode)
 		{
-			var position = hit.point;
-			position.y = Player.Instance.transform.position.y;
-			Player.Instance.transform.position = position;
+			case InputMode.TELEPORT:
+				var position = hit.point;
+				position.y = Player.Instance.transform.position.y;
+				Player.Instance.transform.position = position;
+				break;
+
+			case InputMode.FURNITURE:
+				GameObject placedFurniture = GameObject.Instantiate(Player.Instance.ActiveFurniturePrefab);
+				placedFurniture.transform.position = hit.point;
+				break;
+
+			default:
+				break;
 		}
 	}
 }

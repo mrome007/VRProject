@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -202,6 +207,11 @@ Prefab:
       propertyPath: m_Name
       value: LightA (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114622655130139828, guid: 3e73c147d7d510545a82332143682a2c,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_IsPrefabParent: 0
@@ -209,6 +219,80 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 443038, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_PrefabInternal: {fileID: 21318469}
+--- !u!1 &28427281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 28427282}
+  - component: {fileID: 28427284}
+  - component: {fileID: 28427283}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &28427282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28427281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1136553835}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &28427283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28427281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Scale
+--- !u!222 &28427284
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28427281}
 --- !u!1 &28838172 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 104046, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
@@ -224,6 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
 --- !u!1001 &35240216
 Prefab:
   m_ObjectHideFlags: 0
@@ -267,6 +352,11 @@ Prefab:
       propertyPath: m_Name
       value: StatueD (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
   m_IsPrefabParent: 0
@@ -274,6 +364,144 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 453020, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
   m_PrefabInternal: {fileID: 35240216}
+--- !u!1 &40167495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 40167496}
+  - component: {fileID: 40167501}
+  - component: {fileID: 40167500}
+  - component: {fileID: 40167499}
+  - component: {fileID: 40167497}
+  - component: {fileID: 40167498}
+  m_Layer: 5
+  m_Name: Translate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &40167496
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40167495}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 839976017}
+  m_Father: {fileID: 1220538329}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -90, y: -76.95}
+  m_SizeDelta: {x: 80, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &40167497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40167495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50, y: 40, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &40167498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40167495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f72dbad4068e4c20873dd5cf3bff5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsTransformable: 0
+  mode: 4
+--- !u!114 &40167499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40167495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 40167500}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &40167500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40167495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &40167501
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40167495}
 --- !u!1 &92280467
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +610,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -427,6 +660,11 @@ Prefab:
     - target: {fileID: 187220, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
       propertyPath: m_Name
       value: BuildingA (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -474,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActiveMode: 0
+  ActiveFurniturePrefab: {fileID: 0}
   playerSpeed: 3
 --- !u!4 &260215577 stripped
 Transform:
@@ -584,6 +823,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -629,6 +873,11 @@ Prefab:
     - target: {fileID: 187220, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
       propertyPath: m_Name
       value: BuildingA (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -729,13 +978,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1582848659}
-  m_Father: {fileID: 1845408094}
+  m_Father: {fileID: 1220538329}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: 3}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: 115, y: 25}
+  m_SizeDelta: {x: 60, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412918177
 MonoBehaviour:
@@ -822,6 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308350a8be6f34a56954e18ca43db7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
   furniturePrefab: {fileID: 187220, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
 --- !u!65 &412918181
 BoxCollider:
@@ -850,6 +1100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
 --- !u!4 &435422398 stripped
 Transform:
   m_PrefabParentObject: {fileID: 475780, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -892,6 +1143,11 @@ Prefab:
     - target: {fileID: 453020, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
       propertyPath: m_RootOrder
       value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
@@ -943,6 +1199,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -989,6 +1250,11 @@ Prefab:
       propertyPath: m_Name
       value: LightA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114622655130139828, guid: 3e73c147d7d510545a82332143682a2c,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_IsPrefabParent: 0
@@ -1011,6 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
 --- !u!1001 &548725641
 Prefab:
   m_ObjectHideFlags: 0
@@ -1049,6 +1316,11 @@ Prefab:
     - target: {fileID: 4000012910057650, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
       propertyPath: m_RootOrder
       value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
@@ -1089,13 +1361,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1577725102}
-  m_Father: {fileID: 1845408094}
+  m_Father: {fileID: 1220538329}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 3}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: -40, y: 25}
+  m_SizeDelta: {x: 60, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &594017964
 MonoBehaviour:
@@ -1182,6 +1454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308350a8be6f34a56954e18ca43db7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
   furniturePrefab: {fileID: 104046, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
 --- !u!65 &594017968
 BoxCollider:
@@ -1238,6 +1511,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -1289,6 +1567,11 @@ Prefab:
       propertyPath: m_Name
       value: LightA (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114622655130139828, guid: 3e73c147d7d510545a82332143682a2c,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_IsPrefabParent: 0
@@ -1311,6 +1594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
 --- !u!1001 &647085439
 Prefab:
   m_ObjectHideFlags: 0
@@ -1353,6 +1637,11 @@ Prefab:
     - target: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
       propertyPath: m_Name
       value: Japanese Street Lamp (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
@@ -1405,6 +1694,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -1438,18 +1732,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693824276}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 944026105}
-  m_Father: {fileID: 1845408094}
+  m_Father: {fileID: 1220538329}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: 3}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: -115, y: 25}
+  m_SizeDelta: {x: 60, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &693824278
 MonoBehaviour:
@@ -1536,6 +1830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308350a8be6f34a56954e18ca43db7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
   furniturePrefab: {fileID: 167786, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
 --- !u!65 &693824282
 BoxCollider:
@@ -1591,6 +1886,11 @@ Prefab:
     - target: {fileID: 167786, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
       propertyPath: m_Name
       value: StatueD (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
@@ -1699,6 +1999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72d02401dba4415d880d6c7c1b714dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
 --- !u!1001 &754212150
 Prefab:
   m_ObjectHideFlags: 0
@@ -1741,6 +2042,11 @@ Prefab:
     - target: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
       propertyPath: m_Name
       value: Japanese Street Lamp (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
@@ -1871,6 +2177,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -1916,6 +2227,11 @@ Prefab:
     - target: {fileID: 167786, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
       propertyPath: m_Name
       value: StatueD (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
@@ -1967,6 +2283,11 @@ Prefab:
       propertyPath: m_Name
       value: LightA (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114622655130139828, guid: 3e73c147d7d510545a82332143682a2c,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_IsPrefabParent: 0
@@ -2017,6 +2338,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -2025,6 +2351,80 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012910057650, guid: d3a86a245c874f341815b25579c74e3e,
     type: 2}
   m_PrefabInternal: {fileID: 826796386}
+--- !u!1 &839976016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 839976017}
+  - component: {fileID: 839976019}
+  - component: {fileID: 839976018}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &839976017
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839976016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 40167496}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &839976018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839976016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Translate
+--- !u!222 &839976019
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839976016}
 --- !u!4 &895137051 stripped
 Transform:
   m_PrefabParentObject: {fileID: 475780, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -2200,6 +2600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaa29e75b13d46ef892627069e74e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
 --- !u!1 &955861928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f72dbad4068e4c20873dd5cf3bff5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
   mode: 1
 --- !u!1001 &1000389971
 Prefab:
@@ -2380,6 +2782,11 @@ Prefab:
       propertyPath: m_Name
       value: LightA (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114622655130139828, guid: 3e73c147d7d510545a82332143682a2c,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_IsPrefabParent: 0
@@ -2387,6 +2794,144 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 443038, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
   m_PrefabInternal: {fileID: 1000389971}
+--- !u!1 &1032834748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1032834749}
+  - component: {fileID: 1032834754}
+  - component: {fileID: 1032834753}
+  - component: {fileID: 1032834752}
+  - component: {fileID: 1032834750}
+  - component: {fileID: 1032834751}
+  m_Layer: 5
+  m_Name: Rotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032834749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032834748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1466154566}
+  m_Father: {fileID: 1220538329}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.5, y: -76.95}
+  m_SizeDelta: {x: 80, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &1032834750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032834748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50, y: 40, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1032834751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032834748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f72dbad4068e4c20873dd5cf3bff5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsTransformable: 0
+  mode: 5
+--- !u!114 &1032834752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032834748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1032834753}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1032834753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032834748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1032834754
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032834748}
 --- !u!1001 &1033129091
 Prefab:
   m_ObjectHideFlags: 0
@@ -2429,6 +2974,11 @@ Prefab:
     - target: {fileID: 187220, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
       propertyPath: m_Name
       value: BuildingA (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -2475,6 +3025,11 @@ Prefab:
     - target: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
       propertyPath: m_Name
       value: Japanese Street Lamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
@@ -2695,6 +3250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f72dbad4068e4c20873dd5cf3bff5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
   mode: 2
 --- !u!4 &1099721815 stripped
 Transform:
@@ -2735,13 +3291,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 795253710}
-  m_Father: {fileID: 1845408094}
+  m_Father: {fileID: 1220538329}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 3}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: 40, y: 25}
+  m_SizeDelta: {x: 60, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117418152
 MonoBehaviour:
@@ -2828,6 +3384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308350a8be6f34a56954e18ca43db7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsTransformable: 0
   furniturePrefab: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e,
     type: 2}
 --- !u!65 &1117418156
@@ -2842,6 +3399,144 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50, y: 40, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1136553834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1136553835}
+  - component: {fileID: 1136553840}
+  - component: {fileID: 1136553839}
+  - component: {fileID: 1136553838}
+  - component: {fileID: 1136553836}
+  - component: {fileID: 1136553837}
+  m_Layer: 5
+  m_Name: Scale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1136553835
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136553834}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 28427282}
+  m_Father: {fileID: 1220538329}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 90, y: -76.95}
+  m_SizeDelta: {x: 80, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &1136553836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136553834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50, y: 40, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1136553837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136553834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f72dbad4068e4c20873dd5cf3bff5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsTransformable: 0
+  mode: 6
+--- !u!114 &1136553838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136553834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1136553839}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1136553839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136553834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1136553840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136553834}
 --- !u!1001 &1171799611
 Prefab:
   m_ObjectHideFlags: 0
@@ -2884,6 +3579,11 @@ Prefab:
     - target: {fileID: 187220, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
       propertyPath: m_Name
       value: BuildingA (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -2931,6 +3631,11 @@ Prefab:
       propertyPath: m_Name
       value: StatueD (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
   m_IsPrefabParent: 0
@@ -2942,6 +3647,48 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 475780, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_PrefabInternal: {fileID: 1461890965}
+--- !u!1 &1220538328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1220538329}
+  m_Layer: 5
+  m_Name: Furniture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1220538329
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1220538328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 40167496}
+  - {fileID: 1032834749}
+  - {fileID: 1136553835}
+  - {fileID: 693824277}
+  - {fileID: 594017963}
+  - {fileID: 1117418151}
+  - {fileID: 412918176}
+  - {fileID: 2010715233}
+  - {fileID: 1482637357}
+  m_Father: {fileID: 1845408094}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 20}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1224554495
 Prefab:
   m_ObjectHideFlags: 0
@@ -2984,6 +3731,11 @@ Prefab:
     - target: {fileID: 167786, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
       propertyPath: m_Name
       value: StatueD (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
@@ -3035,6 +3787,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -3081,6 +3838,11 @@ Prefab:
       propertyPath: m_Name
       value: FurnaceA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114605170761101988, guid: 88da39ed0b9670049baf1e4f06dcfa06,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88da39ed0b9670049baf1e4f06dcfa06, type: 2}
   m_IsPrefabParent: 0
@@ -3126,6 +3888,11 @@ Prefab:
     - target: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
       propertyPath: m_Name
       value: Japanese Street Lamp (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
@@ -3264,6 +4031,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -3383,6 +4155,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -3476,9 +4253,162 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1466154565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1466154566}
+  - component: {fileID: 1466154568}
+  - component: {fileID: 1466154567}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1466154566
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466154565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1032834749}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1466154567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466154565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Rotate
+--- !u!222 &1466154568
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466154565}
+--- !u!1 &1482637356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1482637357}
+  - component: {fileID: 1482637359}
+  - component: {fileID: 1482637358}
+  m_Layer: 5
+  m_Name: Transformations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1482637357
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482637356}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1220538329}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1482637358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482637356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 176
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Transformations
+--- !u!222 &1482637359
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482637356}
 --- !u!1 &1486778061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,6 +4544,11 @@ Prefab:
     - target: {fileID: 475780, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
@@ -3821,6 +4756,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -3871,6 +4811,11 @@ Prefab:
     - target: {fileID: 167786, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
       propertyPath: m_Name
       value: StatueD (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
@@ -3993,6 +4938,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -4039,6 +4989,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -4084,6 +5039,11 @@ Prefab:
     - target: {fileID: 167786, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
       propertyPath: m_Name
       value: StatueD (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954906325680236, guid: 573a6e3170167534ba962b93a414fcb8,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573a6e3170167534ba962b93a414fcb8, type: 2}
@@ -4135,6 +5095,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 114605170761101988, guid: 88da39ed0b9670049baf1e4f06dcfa06,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88da39ed0b9670049baf1e4f06dcfa06, type: 2}
   m_IsPrefabParent: 0
@@ -4170,11 +5135,7 @@ RectTransform:
   - {fileID: 1401192569}
   - {fileID: 955861929}
   - {fileID: 1084405110}
-  - {fileID: 693824277}
-  - {fileID: 594017963}
-  - {fileID: 1117418151}
-  - {fileID: 412918176}
-  - {fileID: 2010715233}
+  - {fileID: 1220538329}
   m_Father: {fileID: 224890534}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4297,6 +5258,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -4342,6 +5308,11 @@ Prefab:
     - target: {fileID: 443038, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
       propertyPath: m_RootOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622655130139828, guid: 3e73c147d7d510545a82332143682a2c,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e73c147d7d510545a82332143682a2c, type: 2}
@@ -4393,6 +5364,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -4424,16 +5400,16 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2010715232}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1845408094}
+  m_Father: {fileID: 1220538329}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 85}
+  m_AnchoredPosition: {x: 0, y: 86.76}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010715234
@@ -4457,7 +5433,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 36
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4518,6 +5494,11 @@ Prefab:
       propertyPath: m_Name
       value: Japanese Street Lamp (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -4573,6 +5554,11 @@ Prefab:
       propertyPath: m_Name
       value: BuildingA (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
   m_IsPrefabParent: 0
@@ -4618,6 +5604,11 @@ Prefab:
     - target: {fileID: 187220, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}
       propertyPath: m_Name
       value: BuildingA (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364440138168330, guid: b16d31c474ad0184690aae14bfab60b2,
+        type: 2}
+      propertyPath: IsTransformable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b16d31c474ad0184690aae14bfab60b2, type: 2}

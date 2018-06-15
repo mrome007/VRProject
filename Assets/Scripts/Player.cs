@@ -57,5 +57,8 @@ public enum InputMode
 	NONE,
 	TELEPORT,
 	WALK,
-	FURNITURE
+	FURNITURE,
+	TRANSLATE,
+	ROTATE,
+	SCALE
 }
