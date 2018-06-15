@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 
 	private static Player instance = null;
 
+	public GameObject ActiveFurniturePrefab;
+
 	[SerializeField]
 	private float playerSpeed = 3.0f;
 	
@@ -54,5 +56,6 @@ public enum InputMode
 {
 	NONE,
 	TELEPORT,
-	WALK
+	WALK,
+	FURNITURE
 }
