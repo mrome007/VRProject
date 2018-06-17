@@ -1,14 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GazeSystem.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="47" Column="41" />
-      <File FileName="Assets/Scripts/GazeableButton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GazeableObject.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GazeSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GazeableObject.cs" Line="73" Column="10" />
+      <File FileName="Assets/Scripts/Player.cs" Line="63" Column="7" />
+      <File FileName="Assets/Scripts/GazeableButton.cs" Line="22" Column="4" />
+      <File FileName="Assets/Scripts/GazeSystem.cs" Line="57" Column="5" />
       <File FileName="Assets/Scripts/VRCanvas.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ModeButton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Floor.cs" Line="14" Column="54" />
+      <File FileName="Assets/Scripts/Floor.cs" Line="21" Column="52" />
+      <File FileName="Assets/Scripts/FurnitureButton.cs" Line="13" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

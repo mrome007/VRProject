@@ -8,6 +8,11 @@ public class GazeableObject : MonoBehaviour
 	private int objectLayer;
 	private const int IgnoreRaycastLayer = 2;
 
+	private Vector3 initialObjectRotation;
+	private Vector3 initialPlayerRotation;
+
+	private Vector3 initialObjectScale;
+
 	public virtual void OnGazeEnter(RaycastHit hit)
 	{
 		Debug.Log("Gaze entered on " + gameObject.name);
@@ -30,6 +35,11 @@ public class GazeableObject : MonoBehaviour
 		{
 			objectLayer = gameObject.layer;
 			gameObject.layer = IgnoreRaycastLayer;
+
+			initialObjectRotation = transform.rotation.eulerAngles;
+			initialPlayerRotation = Camera.main.transform.rotation.eulerAngles;
+
+			initialObjectScale = transform.localScale;
 		}
 	}
 
@@ -78,11 +88,44 @@ public class GazeableObject : MonoBehaviour
 
 	public virtual void GazeRotate(RaycastHit hit)
 	{
+		float rotationSpeed = 5f;
+		var currentPlayerRotation = Camera.main.transform.rotation.eulerAngles;
+		var currentObjectRotation = transform.rotation.eulerAngles;
 
+		var rotationDelta = currentPlayerRotation - initialPlayerRotation;
+
+		var newRotation = new Vector3(currentObjectRotation.x, initialObjectRotation.y + (rotationDelta.y * rotationSpeed), currentObjectRotation.z);
+		transform.rotation = Quaternion.Euler(newRotation);
 	}
 
 	public virtual void GazeScale(RaycastHit hit)
 	{
+		var scaleSpeed = 0.1f;
+		var scaleFactor = 1f;
 
+		var currentPlayerRotation = Camera.main.transform.rotation.eulerAngles;
+		var rotationDelta = currentPlayerRotation - initialPlayerRotation;
+
+		//if looking up.
+		if(rotationDelta.x < 0 && rotationDelta.x > -180f || rotationDelta.x > 180f && rotationDelta.x < 360f)
+		{
+			if(rotationDelta.x > 180f)
+			{
+				rotationDelta.x = 360f - rotationDelta.x;
+			}
+
+			scaleFactor = 1f + Mathf.Abs(rotationDelta.x) * scaleSpeed;
+		}
+		else
+		{
+			if(rotationDelta.x < -180f)
+			{
+				rotationDelta.x = 360f + rotationDelta.x;
+			}
+
+			scaleFactor = Mathf.Max(0.1f, 1.0f - (Mathf.Abs(rotationDelta.x) * (1f / scaleSpeed)) / 180f);
+		}
+
+		transform.localScale = scaleFactor * initialObjectScale;
 	}
 }
