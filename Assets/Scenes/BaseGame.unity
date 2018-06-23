@@ -1319,11 +1319,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 29
       objectReference: {fileID: 0}
-    - target: {fileID: 114599569481980490, guid: d3a86a245c874f341815b25579c74e3e,
-        type: 2}
-      propertyPath: IsTransformable
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 2}
   m_IsPrefabParent: 0
@@ -2137,7 +2132,7 @@ GameObject:
   - component: {fileID: 752840156}
   - component: {fileID: 752840155}
   - component: {fileID: 752840159}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2158,7 +2153,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2d775e8b0794c4768a115af1f7c6f11b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2207,8 +2202,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -2, z: 25}
   m_LocalScale: {x: 100, y: 1, z: 300}
   m_Children: []
-  m_Father: {fileID: 1081878239}
-  m_RootOrder: 46
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &752840159
 MonoBehaviour:
@@ -2759,8 +2754,8 @@ Camera:
   m_GameObject: {fileID: 902913967}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2775,7 +2770,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294966783
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 3c93f7b0aeb164018bc85373cf99b2bb, type: 2}
   m_TargetDisplay: 0
@@ -2798,7 +2793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!4 &906874039 stripped
 Transform:
@@ -3481,7 +3476,6 @@ Transform:
   - {fileID: 1224554496}
   - {fileID: 722175864}
   - {fileID: 802185362}
-  - {fileID: 752840158}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
