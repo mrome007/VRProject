@@ -12,6 +12,11 @@ public class VRCanvas : MonoBehaviour
 	[SerializeField]
 	private Color selectedColor = Color.green;
 
+	private void Update()
+	{
+		LookAtPlayer();
+	}
+
 	public void SetActiveButton(GazeableButton activeButton)
 	{
 		if(currentActiveButton != null)
@@ -29,5 +34,14 @@ public class VRCanvas : MonoBehaviour
 			currentActiveButton = null;
 			Player.Instance.ActiveMode = InputMode.NONE;
 		}
+	}
+
+	private void LookAtPlayer()
+	{
+		var playerPosition = Player.Instance.transform.position;
+		var vectorPlayer = playerPosition - transform.position;
+
+		var lookAtPos = transform.position - vectorPlayer;
+		transform.LookAt(lookAtPos);
 	}
 }

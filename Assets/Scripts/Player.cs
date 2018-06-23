@@ -60,5 +60,6 @@ public enum InputMode
 	FURNITURE,
 	TRANSLATE,
 	ROTATE,
-	SCALE
+	SCALE,
+	DRAG
 }
